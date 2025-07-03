@@ -1,0 +1,144 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: #0b061f;
+  color: white;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #150d2d;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 800;
+  color: #ff4d4d;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero-section {
+  height: auto;
+  padding-top: 30px; /* Add spacing you like */
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Push to top */
+  text-align: center;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("images.jpeg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.25;
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  width: 100%;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.hero-content h1 span {
+  color: #ff4d4d;
+}
+
+/* Countdown Timer */
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+  font-size: 22px;
+  font-weight: bold;
+  flex-wrap: wrap;
+}
+
+.countdown div span {
+  font-size: 36px;
+  display: block;
+}
+
+/* Buttons */
+.cta-buttons {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.download,
+.trade {
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.download {
+  background-color: #ff4d4d;
+  color: white;
+  box-shadow: 0 4px 15px rgba(255, 77, 77, 0.3);
+}
+
+.trade {
+  background-color: white;
+  color: #0b061f;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.download:hover {
+  background-color: #e43e3e;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 77, 77, 0.5);
+}
+
+.trade:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.4);
+}
+
+/* Crypto Icons */
+.cryptos {
+  margin-top: 10px;
+}
+
+.cryptos span {
+  margin: 0 10px;
+}
